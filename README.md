@@ -1,2 +1,2 @@
 # QT4ADemoProj
-Demo testcase for QT4A
+This is the demo testcase for QT4A(https://github.com/Tencent/qt4a).
