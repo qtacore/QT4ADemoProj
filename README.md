@@ -1,6 +1,6 @@
 # QT4A Demo项目
 
-`这是QT4A(https://github.com/Tencent/qt4a)的Demo使用项目。`
+这是[QT4A](https://github.com/Tencent/qt4a)的Demo使用项目。
 
 ## 安装依赖库
 
