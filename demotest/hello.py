@@ -23,6 +23,7 @@ class HelloTest(DemoTestBase):
         device = self.acquire_device()
         app = DemoApp(device)
         app.login(acc, pwd)
+        self.log_info("登录完成")        
         self.waitForEqual('当前Activity为：com.qta.qt4a.demo.HomeActivity', app.device, 'current_activity', 'com.qta.qt4a.demo.HomeActivity')
 
     

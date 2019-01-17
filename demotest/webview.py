@@ -24,6 +24,7 @@ class WebViewTest(DemoTestBase):
         device = self.acquire_device()
         app = DemoApp(device)
         app.login(acc, pwd)
+        self.log_info("登录完成")
         home_panel = HomePanel(app)
         home_panel.Controls["进入网页视图"].click()
         
