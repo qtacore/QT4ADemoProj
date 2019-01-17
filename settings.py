@@ -9,3 +9,5 @@ PROJECT_NAME = "demo"
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 PROJECT_MODE = "standard"
 INSTALLED_APPS = []
+UPLOAD_LOGCAT_WHEN_PASS = True
+QT4A_UPLOAD_QT4A_LOG = True
