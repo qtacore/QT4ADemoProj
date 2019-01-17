@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from qt4a.andrcontrols import Window, Button, EditText, TextView
+from qt4a.andrcontrols import Window, Button, EditText
 from qt4a.qpath import QPath
 
 class LoginPanel(Window):
@@ -10,7 +10,7 @@ class LoginPanel(Window):
 
     def __init__(self, demoapp):
         super(LoginPanel, self).__init__(demoapp)
-        self.updateLocator({'帐号': {'type': EditText, 'root': self, 'locator': QPath('/Id="editAcc"')},
+        self.update_locator({'帐号': {'type': EditText, 'root': self, 'locator': QPath('/Id="editAcc"')},
                             '密码': {'type': EditText, 'root': self, 'locator': QPath('/Id="editPwd"')},
                             '登录': {'type': Button, 'root': self, 'locator': QPath('/Id="btnLogin"')},
                       
@@ -24,12 +24,5 @@ class LoginPanel(Window):
         self.Controls["密码"].text = pwd
         self.Controls["登录"].click()
 
-class HomePanel(Window):
-    '''登录界面
-    '''
-    Activity = 'com.qta.qt4a.demo.HomeActivity'  # 主界面
 
-    def __init__(self, demoapp):
-        super(HomePanel, self).__init__(demoapp)
-        self.updateLocator({'登录结果': {'type': TextView, 'root': self, 'locator': QPath('/Id="loginSuccess"')},
-                            })
+
