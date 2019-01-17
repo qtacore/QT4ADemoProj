@@ -13,7 +13,7 @@ class WebViewTest(DemoTestBase):
     owner = "Administrator"
     timeout = 5
     priority = DemoTestBase.EnumPriority.High
-    status = DemoTestBase.EnumStatus.Design
+    status = DemoTestBase.EnumStatus.Ready
     
     def run_test(self):
         #--------------------------
