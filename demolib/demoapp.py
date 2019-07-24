@@ -31,7 +31,7 @@ class DemoApp(AndroidApp):
     def login(self, acc, pwd):
         '''登录demo
         '''
-        from login import LoginPanel
+        from .login import LoginPanel
         login_panel = LoginPanel(self)
         login_panel.login(acc, pwd)
         
